@@ -24,7 +24,7 @@ def Score_y_Url(row):
                 url = "https://api.themoviedb.org/3/search/tv?query=" + nombre + "&include_adult=false&language=es-ES&page=1"
         headers = {
             "accept": "application/json",
-            "Authorization": "Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYmY4MTJmMTFiOWMwMjE3Zjk1YWM3MjBiYzhlZWNhZiIsInN1YiI6IjVhYTVhZWMzMGUwYTI2MDc0YjAyZDc4YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bdB6qvk3WIdgL5BXXSFB4wZ1JUt9FqS4Er8u-YurVNg"
         }
 
         response = requests.get(url, headers=headers).json()
